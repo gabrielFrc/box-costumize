@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Costumize</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/costumize-box.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,10 +15,12 @@
         <div class="costumize">
             <label>Costumize</label>
             <br>
-            <input type="text" name="costumize-input">
-            <br>
-            <button onclick="costumize()">Send</button>
+            <div class="costumize-box">
+                <input type="text" name="costumize-input" spellcheck="false">
+                <button onclick="costumize()">Send</button>
+            </div>
         </div>
     </div>
+    <script src="scripts/costumize-box.js"></script>
 </body>
 </html>

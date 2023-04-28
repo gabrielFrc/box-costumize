@@ -1,9 +1,15 @@
+:root{
+    --first-color: #BCABAE;
+    --second-color: #716969;
+    --third-color: #2D2E2E;
+    --four-color: #0F0F0F;
+}
 *{
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
 body{
-    background-color: rgb(157, 218, 243);
+    background-color: var(--third-color)
 }
 .container{
     text-align: center;
@@ -17,24 +23,47 @@ body{
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
     margin: 30px auto;
 }
-label{
-    color: rgb(255, 255, 255);
-    font-size: 1.25em;
-    font-weight: bolder;
-    text-shadow: 0px 3px 3px black;
-    background-color: rgba(0, 0, 0, 0.114);
-    padding: 5px 10px;
-    border-radius: 7px;
-}
-input{
-    margin: 15px 0;
-    height: 30px;
-    width: 190px;
+.costumize{
+    background-color: var(--second-color);
+    display: inline-block;
+    padding: 30px 30px;
     border: 2px solid black;
     border-radius: 5px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+label{
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-shadow: 0px 3px 3px black;
+    border-radius: 7px;
+}
+div .costumize-box{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px 0 0 5px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 input:focus{
     outline: none;
+}
+button{
+    margin-left: -11px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    padding: 8.4px 20px;
+}
+button:hover{
+    background-color: var(--first-color);
+    color: black;
 }
